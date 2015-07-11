@@ -30,3 +30,7 @@
 
 # Debug files
 *.dSYM/
+
+# Editor temporary and backup files
+\#.*\#
+*~
