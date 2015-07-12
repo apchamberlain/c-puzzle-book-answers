@@ -83,6 +83,28 @@ I would also not expect there to be any ambiguity in
 
 Also, note that behavior "left to the compiler writer" is *not* the
 same as *undefined* behavior.  The latter, ironically, has a
-well-defined meaning.  Undefined behavior contaminates the code it's
-in, the way mold anywhere on a soft cheese makes the rest unsafe to
-eat.  People are fond of saying that
+well-defined meaning.  Undefined behavior in a C compiler contaminates
+the code it's in, the way mold anywhere on a soft cheese makes the
+rest unsafe to eat.  People are fond of saying that "undefined" means
+the compiler is free to generate code that crashes the whole system
+(not just the current process), reformats your hard drive, sends hate
+mail to the White House, or some such.  In real life it probably just
+means that the program will dump core.
+
+In this case, though, again, the behavior is *compiler-dependent*.
+This implies consistency and predictability (just not necessarily the
+consistency that you expect).  In particular, I would expect the
+code
+
+```C
+    b = 2;
+    a = b++ + b;
+```
+
+to leave `a` equal to 5 and `b` equal to 3, because it seems to me
+consistent with the `a = b++ + c` case that the unary increment should
+be applied last when computing the value of the right-hand side
+expression, after the fetch of `b` and the binary `+`.
+(And this is in fact the result on
+_gcc_ running on a virtualized 64-bit Intel CPU on Linux, but you
+should test it yourself--a complete program is in `3-more.c`).
