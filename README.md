@@ -1,7 +1,7 @@
 # c-puzzle-book-answers
 Answers with commentary/discussion for selected problems from
 _The C Puzzle Book, 2nd ed._ by Alan R. Feuer
-([buy at Amazon](http://www.amazon.com/The-Puzzle-Book-Alan-Feuer/dp/0201604612).
+([buy at Amazon](http://www.amazon.com/The-Puzzle-Book-Alan-Feuer/dp/0201604612)).
 
 (Do not confuse this with
 _[The C Answer Book](http://www.amazon.com/The-Answer-Book-Solutions-Programming/dp/0131096532)_--also
