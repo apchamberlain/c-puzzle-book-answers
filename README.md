@@ -26,7 +26,7 @@ all the rules in mind all the time.
 
 _The C Puzzle Book_ includes answers for the exercises, but the
 explanations are sometimes terse or give you the *why* but not the
-*how*.  In this repo, as an ongoing project, I'm trying to write down
+*how*.  In this repository, as an ongoing project, I'm trying to write down
 notes on the problems that I found more interesting or surprising,
 with my own more detailed commentary than the original book.  For most
 of the
@@ -34,5 +34,23 @@ problems that I thought were worth commentary, I've also saved you the
 trouble of typing in the code--I had to type it in and run it myself
 in order to understand it!
 
-Pull requests gladly considered!  Help me make this another good
+Pull requests will be gratefully considered!  Help me make this another good
 source of online C info.
+
+# Copyright Information
+
+All files in this repository with names of the form `[NUMBER]-code.c`
+are copyright 1999 Alan R. Feuer.
+
+The preceding paragraph constitutes my acknowledgement in good faith
+of the copyright terms applicable to the material here duplicated from
+the book _The C Puzzle Book_.  I believe that my act of reproducing
+these C language source files falls under the doctrine of fair use,
+specifically the provision for works of commentary or criticism.  If I
+am incorrect, please send email to `apchamberlain@gmail.com`; I will
+gladly remove these files from public availability if notified
+by a person with legal authority to make such requests.
+
+All other material in this GitHub repositary is copyright Alex
+Chamberlain under the
+terms of the GNU General Public License.  See the file `LICENSING`.
