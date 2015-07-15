@@ -53,4 +53,4 @@ by a person with legal authority to make such requests.
 
 All other material in this GitHub repositary is copyright Alex
 Chamberlain under the
-terms of the GNU General Public License.  See the file `LICENSING`.
+terms of the GNU General Public License.  See the file `LICENSE`.
